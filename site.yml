@@ -1,0 +1,8 @@
+---
+- hosts: my_servers
+  become: true
+  tasks:
+    - name: Install Apache
+      ansible.builtin.package:
+        name: apache2
+        state: present
